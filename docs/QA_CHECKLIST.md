@@ -1,0 +1,12 @@
+# QA checklist
+- [ ] Period selector exposes only 7, 14, 30.
+- [ ] No operator selection before search.
+- [ ] Every registry connector is attempted in one request.
+- [ ] Failed connector does not fail the entire search.
+- [ ] Unconfigured connector is clearly marked.
+- [ ] Transactions sorted newest-first.
+- [ ] Deduplication uses operator + receipt ID only.
+- [ ] No full card number in logs/database.
+- [ ] Original receipt link is distinct from DpgTAP report.
+- [ ] Empty results are not presented as proof that no toll transaction occurred.
+- [ ] Test date boundaries, timezone Asia/Jakarta, and 30-day retention limits per operator.
